@@ -13,7 +13,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+     $loader = new/Twig/Loader/FilesystemLoader();
+     $loader-> addPath(base_path(). '/resources/components','components');
+     $loader-> addPath(base_path(). '/resources/layouts','Layouts');
+     \Twig:: getLoader()->addLoader($Loader);
     }
 
     /**
