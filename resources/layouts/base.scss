@@ -7,3 +7,12 @@
         flex: 1;
     }
 }
+
+.Container {
+    @extend .uk-container;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}

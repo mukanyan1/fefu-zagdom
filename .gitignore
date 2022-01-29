@@ -19,3 +19,5 @@ yarn-error.log
 /public/mix-manifest.json
 public/build/bundle.css
 public/build/bundle.js
+/bootstrap
+/config
