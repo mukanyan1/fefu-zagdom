@@ -24,6 +24,7 @@
         "-": "^0.0.1",
         "postcss-axis": "^0.1.2",
         "postcss-modules": "^4.3.0",
+        "swiper": "^7.4.1",
         "uikit": "^3.10.1"
     }
 }
