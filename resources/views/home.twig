@@ -1,0 +1,34 @@
+{% extends '@layouts/base.twig' %}
+
+{% set scope = {
+    slides: [
+        {
+            desktopImage: 'mockup/slides/slide_desk.png'|asset,
+            mobileImage: 'mockup/slides/slide_phone.png'|asset,
+            title: 'Проектируем <br>и строим загородные дома',
+            text: 'Строим дома «под ключ»: от этапа проектирования и до финишной отделки помещений',
+        },
+        {
+            desktopImage: 'mockup/slides/slide_desk.png'|asset,
+            mobileImage: 'mockup/slides/slide_phone.png'|asset,
+            title: 'Проектируем <br>и строим загородные дома',
+            text: 'Строим дома «под ключ»: от этапа проектирования и до финишной отделки помещений',
+        },
+        {
+            desktopImage: 'mockup/slides/slide_desk.png'|asset,
+            mobileImage: 'mockup/slides/slide_phone.png'|asset,
+            title: 'Проектируем <br>и строим загородные дома',
+            text: 'Строим дома «под ключ»: от этапа проектирования и до финишной отделки помещений',
+        },
+    ], 
+} %}
+
+{% block main %}
+    <div class="Container">
+    <div class="Layout__section Layout__section--slider">
+            {% include '@components/slider/slider.twig' with {
+                items: scope.slides,
+            } %}
+        </div>
+    </div>
+{% endblock %}
