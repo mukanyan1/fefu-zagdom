@@ -21,13 +21,36 @@
             text: 'Строим дома «под ключ»: от этапа проектирования и до финишной отделки помещений',
         },
     ], 
+    featuredSection: {
+        title: 'Каждый проект <br>для нас - важный',
+        text: 'Мы строительная компания полного цикла.<br><br>Вникаем во все детали, разрабатываем планировку<br>будущего дома, продумываем конструктивные решения<br> и общую архитектурную концепцию',
+        items: [
+            {
+                icon: 'icons/home-green.svg'|asset,
+                title: '57 домов',
+                text: 'спроектировали и построили “под ключ”',
+            },
+            {
+                icon: 'icons/calendar-green.svg'|asset,
+                title: '14 лет',
+                text: 'мы на рынке загородного строительства',
+            },
+        ]
+    }
 } %}
 
 {% block main %}
     <div class="Container">
-    <div class="Layout__section Layout__section--slider">
+        <div class="Layout__section Layout__section--slider">
             {% include '@components/slider/slider.twig' with {
                 items: scope.slides,
+            } %}
+        </div>
+        <div class="Layout__section Layout__section--featured">
+            {% include '@components/featured-section/featured-section.twig' with {
+                title: scope.featuredSection.title,
+                text: scope.featuredSection.text,
+                items: scope.featuredSection.items,
             } %}
         </div>
     </div>
