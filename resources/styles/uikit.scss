@@ -26,12 +26,18 @@ $button-primary-hover-background: darken($button-primary-background, 5%);
 $button-primary-hover-color: white;
 $button-primary-active-background: darken($button-primary-background, 10%);
 $button-primary-active-color: white;
+$button-secondary-background: white;
+$button-secondary-color: $color-green;
 
 $global-font-family: 'Open Sans', sans-serif;
 $base-heading-font-family: 'Montserrat', sans-serif;
 $offcanvas-bar-background: hsl(153, 98%, 32%);
 $global-inverse-color: white;
 $inverse-global-color: $global-inverse-color;
+
+@mixin hook-button-secondary {
+    border: 1px solid;
+}
 
 // 1. Your custom variables and variable overwrites.
 $global-link-color: #DA7D02;
