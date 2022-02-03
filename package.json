@@ -11,8 +11,20 @@
     },
     "devDependencies": {
         "axios": "^0.21",
+        "browser-sync": "^2.27.7",
+        "browser-sync-webpack-plugin": "^2.3.0",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
-        "postcss": "^8.1.14"
+        "postcss": "^8.4.5",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.49.0",
+        "sass-loader": "^12.4.0"
+    },
+    "dependencies": {
+        "-": "^0.0.1",
+        "postcss-axis": "^0.1.2",
+        "postcss-modules": "^4.3.0",
+        "swiper": "^7.4.1",
+        "uikit": "^3.10.1"
     }
 }

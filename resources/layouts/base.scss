@@ -1,0 +1,37 @@
+.Layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    &__main {
+        flex: 1;
+    }
+
+    &__section {
+        padding-y: 80px;
+
+        &--slider {
+            padding-y: 40px 60px;
+            @include vw-sm-down {
+                padding-y: 20px 40px;
+            }
+        }
+
+        &--projects {
+            background-color: $color-snow-drift;
+
+            @include vw-sm-down {
+                padding: 32px 16px;
+            }
+        }
+    }
+}
+
+.Container {
+    @extend .uk-container;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
